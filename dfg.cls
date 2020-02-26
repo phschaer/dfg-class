@@ -12,16 +12,15 @@
 \RequirePackage[german]{babel}
 \RequirePackage{csquotes}
 \RequirePackage[hang,flushmargin]{footmisc}
-% \RequirePackage{eurosym}
 \RequirePackage[hyphens]{url}
 %\urlstyle{same}
+
 % \RequirePackage{pdfpages}
 \RequirePackage{microtype}
 \RequirePackage[unicode=true,breaklinks=true,colorlinks=true,urlcolor=blue]{hyperref}
 \newcommand{\mailto}[1]{\href{mailto:#1}{\texttt{#1}}}
 
 \RequirePackage[official]{eurosym}
-
 \RequirePackage[nolist, nohyperlinks, withpage]{acronym}
 
 % Fonts.
@@ -38,11 +37,6 @@
 \definecolor{upbtextgreen}{rgb}{0.36,0.67,0.15}%        Pantone solid coated 361 (91,172,38)
 \definecolor{upbtextorange}{rgb}{0.88,0.42,0.03}%       Pantone solid coated 159 (224,108,8)
 \newcommand{\graytext}[1]{{\color{gray}#1}}
-
-
-% Bibliography.
-\RequirePackage[backend=biber,style=authoryear,sorting=ynt]{biblatex}
-\addbibresource{refs.bib}
 
 
 % Text structure. \cf{/usr/share/texmf-texlive/tex/latex/base/article.cls}
@@ -184,64 +178,3 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\RequirePackage{todonotes}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
-
-\input{acronyms.tex}
-
-\pagenumbering{roman}
-\thispagestyle{empty}
-
-
-\vspace*{-10ex}
-\enlargethispage{4ex}
-
-\huge
-Antrag auf Projektförderung bei der Klaus Tschira Stiftung gGmbH
-\par
-\large
-
-\normalsize
-
-
-\vspace{8ex}
-{\bfseries\sffamily Name:}\par
-Journalistic Information Extraction
-
-\vspace{2ex}
-{\bfseries\sffamily Akronym:}\par
-JoIE
-
-\vspace{8ex}
-\renewcommand{\arraystretch}{1.1}
-\begin{tabular}{@{}l@{\quad}l}
-\bfseries\sffamily Laufzeit:                & 36 Monate \\
-\bfseries\sffamily Geplanter Projektstart:  & 1. Oktober 2020 \\
-\bfseries\sffamily Förderumfang :           & 247.067,63\EUR{} \\ %216.168 + 7.299,63 + 5.000 + 18.600 
-% ganz grobe Kalkulation:
-% 3 Jahre WMA 200.000 + SHK 25.000 + Reisen, Server, etc. 25.000 +. 50.000 Overhead 
-\end{tabular}
-
-\vfill
-
-{\bfseries\sffamily Antragsteller} \\[1ex]
-Dr. Meik Bittkowski \\[1ex]
-Science Media Center Germany gGmbH\\[1ex]
-Rosenstr. 42-44, 50678 Köln\\
-\mailto{meik.bittkowski@sciencemediacenter.de} \\
-Tel.: 0221-8888 25 142\\[2ex]
-
-Prof. Dr. Philipp Schaer \\[1ex]
-Technische Hochschule Köln \\
-Fakultät für Informations- und Kommunikationswissenschaften \\[1ex]
-Gustav-Heinemann-Ufer 54, 50968 Köln \\
-\mailto{philipp.schaer@th-koeln.de}  \\
-Tel.: 0221-8275 3845 \\[2ex]
-
-
-\clearpage
-\pagestyle{headings}
-\pagenumbering{arabic}
